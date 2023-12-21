@@ -6,32 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
   <!-- nav -->
     <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid mt-3">
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand ms-5" href="#">
+            <img src="img/DoaOrtus.png" alt="Bootstrap" width="63" height="">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="toggle-darkmode">
+
+          </div>
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav d-flex justify-content-around">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Naufal</a>
-              <a class="nav-link" href="#">Fahrel</a>
-              <a class="nav-link" href="#">Haza</a>
+            <div class="navbar-nav d-flex">
+              <a class="nav-link position-relative text-black fs-5 fw-medium font-family-Raleway text-decoration-none m-0 py-2 mx-2" aria-current="page" href="#beranda">Beranda</a>
+              <a class="nav-link position-relative text-black fs-5 fw-medium font-family-Raleway text-decoration-none m-0 py-2 mx-2" href="#profil">Profil</a>
+              <a class="nav-link position-relative text-black fs-5 fw-medium font-family-Raleway text-decoration-none m-0 py-2 mx-2" href="#produk">Produk</a>
+              <a class="nav-link position-relative text-black fs-5 fw-medium font-family-Raleway text-decoration-none m-0 py-2 mx-2" href="#kontak">Kontak</a>
+              <a class="nav-link position-relative text-black fs-5 fw-medium font-family-Raleway text-decoration-none m-0 py-2 mx-2" href="#pesan">Pesan</a>
+              <a class="nav-link position-relative text-black fs-5 fw-medium font-family-Raleway text-decoration-none m-0 py-2 mx-2" href="#gallery">Gallery</a>
             </div>
           </div>
         </div>
       </nav>
     <!-- nav -->
-    <header id="header">
-        <div class="container">
-            
+
+    <!-- header -->
+    <header id="#beranda" class="hero">
+        <div class="position-absolute jumbotron" style="background-image: url(img/DeganJelly.jpg); background-size: cover; width: 100%;"></div>
+        <div id="component-1" class="container-fluid py-3 mx-3">
+          <p class="text-black fs-1 fw-semibold font-family-Raleway m-0 py-2"">
+            DUA DEWI
+          </p>
+          <div class="border border-3 border-black" style="width: 193px;"></div>
+          <p class="text-black fs-5 fw-normal font-family-Raleway  m-0  py-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor erat et erat sollicitudin consequat. Duis pretium elit diam, quis tristique nunc venenatis lacinia. Sed nec aliquet quam, ac  pretium elit
+          </p>
         </div>
     </header>
+
+    <!--Profile-->
+    <section id="profile" class="">
+      <div class="container">
+        <div class="row">
+          <div class="profile-col1">
+            <img src="img/pie.jpg" alt="pie">
+          </div>
+          <div class="profile-col2">
+            <h1 class="subtitle">Tentang Kami</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor erat et erat sollicitudin consequat. Duis pretium elit diam, quis tristique nunc venenatis lacinia. Sed nec aliquet quam, ac</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Produk-->
+    <section id="produk">
+
+    </section>
+    <!--Kontak-->
+    <section id="kontak">
+      
+    </section>
+    <!--Pesan-->
+    <section id="pesan">
+
+    </section>
+    <!--Galery-->
+    <section id="galeri">
+
+    </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
 </body>
