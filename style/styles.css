@@ -26,26 +26,27 @@ body * {
 nav {
   width: 100%;
 }
-nav.scrolled {
+.scrolled {
   background-color: white;
   color: black;
 }
-/* wait */
-/*ttp ga bisa kah?*/
-/* responsove */
-div.navbar-nav {
-}
-/* responsive */
 
 header#beranda {
   width: 500px;
 }
+
+/* button */
 
 button.btn-jumbotron {
   background-color: var(--lightgreen-1, #10b981);
   stroke-width: 1px;
   stroke: var(--lightgreen-1, #10b981);
   border: 1px solid var(--lightgreen-1, #10b981);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 button.btn-jumbotron:hover {
   background-color: var(--lightgreen-2, #059669);
@@ -57,13 +58,106 @@ button.btn-jumbotron:focus {
   stroke-width: 1px;
   stroke: var(--lightgreen-2, #059669);
   border: 3px solid var(--lightgreen-2, #059669);
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
 }
 button.btn-jumbotron:active {
   background-color: var(--lightgreen-1, #10b981);
   stroke-width: 1px;
   stroke: var(--lightgreen-2, #059669);
   border: 3px solid var(--lightgreen-2, #059669);
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
 }
+
+/*  */
+
+button.btn-kirim {
+  background-color: var(--lightgreen-1, #10b981);
+  stroke-width: 1px;
+  stroke: var(--lightgreen-1, #10b981);
+  border: 1px solid var(--lightgreen-1, #10b981);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+button.btn-kirim:hover {
+  background-color: var(--lightgreen-2, #059669);
+  stroke-width: 1px;
+  stroke: var(--lightgreen-2, #059669);
+}
+button.btn-kirim:focus {
+  background-color: var(--lightgreen-1, #10b981);
+  stroke-width: 1px;
+  stroke: var(--lightgreen-2, #059669);
+  border: 3px solid var(--lightgreen-2, #059669);
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+button.btn-kirim:active {
+  background-color: var(--lightgreen-1, #10b981);
+  stroke-width: 1px;
+  stroke: var(--lightgreen-2, #059669);
+  border: 3px solid var(--lightgreen-2, #059669);
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+
+/*  */
+
+button.btn-chat {
+  background-color: var(--white-1, #fff);
+  stroke-width: 1px;
+  stroke: #10b981;
+  border: 1px solid var(--lightgreen-1, #10b981);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+button.btn-chat:hover {
+  background-color: #e7e7e7;
+  stroke-width: 2px;
+  stroke: var(--lightgreen-1, #10b981);
+}
+button.btn-chat:focus {
+  background-color: var(--white-1, #fff);
+  stroke-width: 2px;
+  stroke: var(--lightgreen-1, #10b981);
+  border: 3px solid var(--lightgreen-1, #10b981);
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+button.btn-chat:active {
+  background-color: var(--white-1, #fff);
+  stroke-width: 2px;
+  stroke: var(--lightgreen-1, #10b981);
+  border: 3px solid var(--lightgreen-1, #10b981);
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+/* button */
 
 #profile1 {
   padding: 80px, 0;
@@ -106,4 +200,114 @@ button.btn-jumbotron:active {
 
 .card {
   margin-bottom: 25px;
+}
+
+form input#nama {
+  border-radius: 100px;
+  border: 1px solid var(--lightgreen-1, #10b981);
+  background: #fff;
+}
+form input#nama:focus {
+  box-shadow: 0px 0.5px 5px 0px #10b981;
+  border: 2px solid #34d399;
+}
+form input#nama::placeholder {
+  color: var(--gray-1, #696e79);
+  font-weight: 400;
+}
+
+form input#email {
+  border-radius: 100px;
+  border: 1px solid var(--lightgreen-1, #10b981);
+  background: #fff;
+}
+form input#email:focus {
+  box-shadow: 0px 0.5px 5px 0px #10b981;
+  border: 2px solid #34d399;
+}
+form input#email::placeholder {
+  color: var(--gray-1, #696e79);
+  font-weight: 400;
+}
+
+form input#whatsapp {
+  border-radius: 100px;
+  border: 1px solid var(--lightgreen-1, #10b981);
+  background: #fff;
+}
+form input#whatsapp:focus {
+  box-shadow: 0px 0.5px 5px 0px #10b981;
+  border: 2px solid #34d399;
+}
+form input#whatsapp::placeholder {
+  color: var(--gray-1, #696e79);
+  font-weight: 400;
+}
+
+form textarea#pesan {
+  border-radius: 15px;
+  border: 1px solid var(--lightgreen-1, #10b981);
+  background: #fff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+form textarea#pesan:focus {
+  box-shadow: 0px 0.5px 5px 0px #10b981;
+  border: 2px solid #34d399;
+}
+form textarea#pesan::placeholder {
+  color: var(--gray-1, #696e79);
+  font-weight: 400;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 992px) {
+  nav-ul li {
+    margin-top: 0px;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+  .navbar-nav a:hover::after {
+    width: 100%;
+  }
+  nav ul li {
+    margin-top: 20px;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    background-color: #e7e7e7;
+  }
+  nav ul li:last-child {
+    margin-bottom: 20px;
+  }
+  header div#component-1 {
+    max-width: 100vh;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+  .navbar-nav a:hover::after {
+    width: 100%;
+  }
+  nav ul li {
+    margin-top: 20px;
+  }
+  nav ul li:last-child {
+    margin-bottom: 20px;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    background-color: #e7e7e7;
+  }
+  header div#component-1 {
+    max-width: 100vh;
+  }
 }

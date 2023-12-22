@@ -1,19 +1,16 @@
 // Fixed Navbar scroll
+window.onscroll = function () {
+  scrollFunction();
+};
 
-const heroElement = document.querySelector("header.hero");
-const heroObserver = new IntersectionObserver(
-  (entries) => {
-    const [entry] = entries;
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("navnav").classList.add("scrolled");
+  } else {
+    document.getElementById("navnav").classList.remove("scrolled");
+  }
+}
 
-    if (entry.isIntersecting) {
-      document.querySelector("nav").classList.add("scrolled");
-    } else {
-      //   document.querySelector("nav").classList.remove("scrolled");
-    }
-  },
-  { threshold: 1.1 }
-);
-
-heroObserver.observe(heroElement);
+// logic dark mode
 
 // Form Validation

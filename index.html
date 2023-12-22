@@ -10,36 +10,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/styles.css" />
+    <link rel="stylesheet" href="style/hamburgers.css">
     <link rel="stylesheet" href="test.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   </head>
   <body>
     <div class="jumbotron" style="background: url(img/jumbotron.jpg) lightgray 50% / cover no-repeat; width: 100%; height: 100vh">
       <!-- nav -->
-      <nav id="navbar" class="navbar navbar-expand-lg">
-        <div class="container-fluid mt-3">
+      <nav id="navbar" class="navbar navbar-expand-md z-3">
+        <div id="navnav" class="container-fluid d-flex justify-content-between position-fixed hehe" style="padding-top: 100px; padding-bottom: 10px;">
           <a class="navbar-brand ms-5" href="#">
-            <img src="img/DoaOrtus.png" alt="Bootstrap" width="63" height="" />
+            <img src="img/DoaOrtus.png" alt="Bootstrap" width="63" height="auto" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="toggle-darkmode"></div>
+          <button class="navbar-toggler position-relative end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="toggle-darkmode"></div>
-          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav d-flex me-5">
-              <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" aria-current="page" href="#">Beranda</a>
-              <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#profil1">Profil</a>
-              <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#produk">Produk</a>
-              <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#kontak">Kontak</a>
-              <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#pesan">Pesan</a>
-              <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#gallery">Gallery</a>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul id="navnav" class="navbar-nav me-5 ms-4 " >
+              <li class="nav-item">
+                <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" aria-current="page" href="#">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#profil1">Profil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#produk">Produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#kontak">Kontak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#pesan">Pesan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link position-relative text-black fs-5 fw-semibold font-family-Raleway text-decoration-none m-0 p-0 mx-3" href="#gallery">Gallery</a>
+              </li>
+            </ul>
           </div>
+          
         </div>
       </nav>
 
-      <header id="beranda" class="hero ms-5" style="margin-top: 100px">
-        <div id="component-1" class="container-fluid py-3 mx-3" style="width: 979px">
+      <header id="beranda" class="hero ms-5" style="margin-top: 225px">
+        <div id="component-1" class="container-fluid py-3 mx-3" style="width: 140vh">
           <p class="text-black display-1 fw-semibold font-family-Raleway m-0 py-2" style="color: #000; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">DUA DEWI</p>
           <div class="border border-3 border-black" style="width: 193px"></div>
           <p class="text-black fs-4 fw-semibold font-family-Raleway m-0 py-2 mt-2">
@@ -60,7 +74,7 @@
       <div class="container">
         <div class="d-flex justify-content-around">
           <div class="profile-col1">
-            <div style="border-radius: 25px; background: url(img/pie.jpg), lightgray 50% / cover no-repeat; background-size: 589px 636px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); width: 589px; height: 636px; flex-shrink: 0"></div>
+            <div style="border-radius: 25px; background: url(img/pie.jpg), lightgray 50% / cover no-repeat; background-size: auto 636px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); width: 589px; height: 636px; flex-shrink: 0"></div>
           </div>
           <div class="profile-col2" style="width: 533px">
             <h1 class="subtitle mb-3" style="color: #1e1e1e; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: Raleway; font-size: 64px; font-style: normal; font-weight: 600; line-height: normal">Tentang Kami</h1>
@@ -78,11 +92,25 @@
         <div class="d-flex justify-content-around">
           <div class="profile2-col1" style="width: 548px">
             <h1 class="subtitle mb-3" style="color: #000; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); font-family: Raleway; font-size: 64px; font-style: normal; font-weight: 600; line-height: normal">Tentang Produk</h1>
-            <p class="fs-3" style="color: #000; font-family: Raleway; font-style: normal; font-weight: 400; line-height: 45px; /* 140.625% */"">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porttitor erat et erat sollicitudin consequat. Duis pretium elit diam, quis tristique nunc venenatis lacinia. Sed nec aliquet quam, ac</p>
+            <p class="fs-3" style="color: #000; font-family: Raleway; font-style: normal; font-weight: 400; line-height: 45px; /* 140.625% */"">
+              Mengetahui sesuatu sehingga kau
+              akan baik baik saja. Dan tau
+              kah kamu tentang hal baik didunia
+              ini?
+              
+              Rupanya kamu  belum familiar
+              dengan hal tersebut sehingga kau
+              tak mengenalinya dengan baik
+              
+              fenomena tersebut sebenarnya
+              saya ga tau juga maksudnya apa.
+              sehingga tolong simpulkan materi
+              diatas tadi :)
+            </p>
           </div>
           <div class="profile2-col2">
             <div
-              style="width: 585px; height: 685px; flex-shrink: 0; border-radius: 25px; background: url(img/restoran.jpg), lightgray 50% / cover no-repeat; background-size: 585px 685px; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
+              style="width: 585px; height: 685px; flex-shrink: 0; border-radius: 25px; background: url(img/restoran.jpg), lightgray 50% / cover no-repeat; background-size: 585px auto; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
             ></div>
           </div>
         </div>
@@ -526,7 +554,7 @@
                     <div class="rounded-1" style="background-image: url(img/KetanSubuh.jpg); background-size: cover; height: 213px; box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25)"></div>
                     <div class="card-body">
                       <h5 class="card-title text-center" style="font-weight: bold">Ketan Subuh</h5>
-                      <p class="card-text">Rp. 12.000</p>
+                      <p class="card-text text-center">Rp. 12.000</p>
                       <div class="d-flex justify-content-center mx-1">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                           <rect width="20" height="20" fill="url(#pattern0)" />
@@ -610,34 +638,50 @@
     <!--Kontak-->
     <section id="kontak"></section>
     <!--Pesan-->
-    <section id="pesan">
-      <form style="width: 26rem">
+    <div class="d-block text-center" style="margin-top: 126px; margin-bottom: 116px;">
+      <h1 style="color: #000;
+      font-family: Raleway;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;">Pesan Sekarang</h1>
+    </div>
+    <section id="pesan" class="d-flex justify-content-center">
+      
+      <form style="width: 876px;">
         <!-- Name input -->
-        <div data-mdb-input-init class="form-outline mb-4">
-          <input type="text" id="form4Example1" class="form-control" />
-          <label class="form-label" for="form4Example1">Name</label>
+        <div data-mdb-input-init class="form mb-4">
+          <label class="form-label fs-5" for="nama" style="color: #000; font-weight: 600;">Nama</label>
+          <input type="text" id="nama" class="form-control py-2 ps-3" placeholder="Masukkan nama kamu"/>
         </div>
 
         <!-- Email input -->
         <div data-mdb-input-init class="form-outline mb-4">
-          <input type="email" id="form4Example2" class="form-control" />
-          <label class="form-label" for="form4Example2">Email address</label>
+          <label class="form-label" for="email" style="color: #000; font-weight: 600;">Email</label>
+          <input type="email" id="email" class="form-control py-2 ps-3" placeholder="Masukkan email kamu"/>
+        </div>
+
+        <!-- Whatsapp input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <label class="form-label" for="whatsapp" style="color: #000; font-weight: 600;">WhatsApp</label>
+          <input type="text" id="whatsapp" class="form-control py-2 ps-3" placeholder="Masukkan nomor whatsapp kamu"/>
         </div>
 
         <!-- Message input -->
         <div data-mdb-input-init class="form-outline mb-4">
-          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-          <label class="form-label" for="form4Example3">Message</label>
-        </div>
-
-        <!-- Checkbox -->
-        <div class="form-check d-flex justify-content-center mb-4">
-          <!-- <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked /> -->
-          <!-- <label class="form-check-label" for="form4Example4"> Send me a copy of this message </label> -->
+          <label class="form-label" for="pesan" style="color: #000; font-weight: 600;">Pesanan</label>
+          <textarea class="form-control py-2 ps-3" id="pesan" rows="4" placeholder="Masukkan produk yang ingin dipesan"></textarea>
         </div>
 
         <!-- Submit button -->
-        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Send</button>
+        <div class="d-flex justify-content-end">
+          <button data-mdb-ripple-init type="button" class="rounded-5 btn-chat mb-4 mx-2">
+            <p class="font-family-raleway fs-5 px-4 mt-2 mb-2" style="color:  var(--lightgreen-1, #10B981);; text-align: center; font-style: normal; font-weight: 600; line-height: normal">Lanjut ke chat</p>
+          </button>
+          <button data-mdb-ripple-init type="button" class="rounded-5 btn-kirim mb-4 mx-2">
+            <p class="font-family-raleway fs-5 px-4 mt-2 mb-2" style="color: #fff; text-align: center; font-style: normal; font-weight: 600; line-height: normal">Kirim</p>
+          </button>
+        </div>
       </form>
     </section>
     <!--Galery-->
