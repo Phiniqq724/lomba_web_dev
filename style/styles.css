@@ -262,6 +262,59 @@ form textarea#pesan::placeholder {
   font-weight: 400;
 }
 
+footer {
+  background-color: #191e29;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .text-end {
+  text-align: end;
+}
+
+.gallery-item {
+  transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item {
+  height: auto; /* Adjust the height based on your content */
+}
+
+.gallery-item {
+  transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+/*ohh disini rupanya :skull: wait cara bikin comment git*/
+/* oke + / ok*/
+/* wow thx */
+#toggle:checked ~ label div.toggle-circle {
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+}
+
 /* Responsive */
 
 @media screen and (max-width: 992px) {
@@ -311,3 +364,27 @@ form textarea#pesan::placeholder {
     max-width: 100vh;
   }
 }
+
+.star {
+  fill: url(#pattern0);
+}
+
+/* darkmode */
+[data-bs-theme="dark"] .profile-col2 p,
+.profile-col2 h1 {
+}
+[data-bs-theme="dark"] .profile2-col1 p,
+.profile2-col1 h1,
+#tulisan-pesan {
+}
+
+[data-bs-theme="dark"] .jumbotron {
+}
+
+/* wait ini gimana cara milihnya dah. misal aku mau pilih yang produk */
+
+/* panggil class nya terus panggil selector text nya hmmm ok deh kucoba*/
+/* selector text kayak = h1, h2, p, dll */
+/* nais */
+/* finally okky aku kelarin yeahhhhh B)*/
+/* boleh silahkan */
