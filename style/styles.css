@@ -4,7 +4,6 @@ body * {
 }
 
 .navbar-nav a {
-  color: black;
   text-decoration: none;
   position: relative;
 }
@@ -13,7 +12,7 @@ body * {
   content: "";
   width: 0%;
   height: 3px;
-  background: black;
+  background: gray;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -31,10 +30,19 @@ nav {
   color: black;
 }
 
+.shadow-whites {
+  text-shadow: 0px 1px 3px #fff;
+}
+
 header#beranda {
   width: 500px;
 }
 
+.jumbotron-backdrop {
+  background-color: rgba(0, 0, 0, 0.837);
+  height: 100vh;
+  width: 100%;
+}
 /* button */
 
 button.btn-jumbotron {
@@ -182,7 +190,11 @@ button.btn-chat:active {
   -o-border-radius: 20px;
 }
 .profile-col2 {
-  color: black;
+  /* Jadi ga kmu kasi warna disananya yah */
+  /* aaa i see */
+  /* Wow rill cuy */
+  /* color: black; */
+  /* biarkan terbengkalai nih warna wkwk*/
   margin-left: 20px;
 }
 
@@ -304,6 +316,22 @@ footer .text-end {
   transform: scale(1.05);
 }
 
+.item {
+  width: 100%;
+  max-width: 300px;
+  height: 200px; /* Set a fixed height for all items */
+  margin: 0 auto;
+  overflow: hidden; /* Hide any overflow */
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  display: block;
+  margin: 0 auto;
+}
+
 /*ohh disini rupanya :skull: wait cara bikin comment git*/
 /* oke + / ok*/
 /* wow thx */
@@ -313,6 +341,19 @@ footer .text-end {
   -moz-transform: translateX(20px);
   -ms-transform: translateX(20px);
   -o-transform: translateX(20px);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+#toggle ~ label div.toggle-circle {
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 
 /* Responsive */
@@ -368,18 +409,14 @@ footer .text-end {
 .star {
   fill: url(#pattern0);
 }
+/* Darkmode fix */
 
 /* darkmode */
-[data-bs-theme="dark"] .profile-col2 p,
-.profile-col2 h1 {
-}
-[data-bs-theme="dark"] .profile2-col1 p,
-.profile2-col1 h1,
-#tulisan-pesan {
-}
 
-[data-bs-theme="dark"] .jumbotron {
-}
+/* Mana ccodenya */
+/* Kasi tw lah */
+/* warnanya ku bikin default theme */
+/* ku sulap */
 
 /* wait ini gimana cara milihnya dah. misal aku mau pilih yang produk */
 
@@ -388,3 +425,6 @@ footer .text-end {
 /* nais */
 /* finally okky aku kelarin yeahhhhh B)*/
 /* boleh silahkan */
+/* Still ga bisa fix ini  */
+/* true */
+/* oh wait dah */
