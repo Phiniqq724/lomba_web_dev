@@ -1,19 +1,60 @@
 // Fixed Navbar scroll
+window.onscroll = function () {
+  scrollFunction();
+};
 
-const heroElement = document.querySelector("header.hero");
-const heroObserver = new IntersectionObserver(
-    (entries) => {
-        const [entry] = entries;
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("navnav").classList.add("scrolled");
+  } else {
+    document.getElementById("navnav").classList.remove("scrolled");
+  }
+}
 
-        if(entry.isIntersecting) {
-            document.querySelector("nav").classList.add("scrolled");
-        } else {
-            document.querySelector("nav").classList.remove("scrolled")
-        }
-    }, {threshold: 0.9}
-)
+// logic dark mode
+const checkbox = document.querySelector("#toggle");
+const html = document.querySelector("html");
 
-heroObserver.observe(heroElement);
-
+checkbox.addEventListener("click", function () {
+  checkbox.checked ? html.setAttribute("data-bs-theme", "dark") : html.removeAttribute("data-bs-theme", "dark");
+});
 
 // Form Validation
+//ok
+
+// slider
+$(".slider").slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+});
