@@ -34,6 +34,10 @@ nav {
   text-shadow: 0px 1px 3px #fff;
 }
 
+.form-dark {
+  background-color: rgba(70, 90, 126, 0.4) !important;
+}
+
 header#beranda {
   width: 500px;
 }
@@ -190,11 +194,6 @@ button.btn-chat:active {
   -o-border-radius: 20px;
 }
 .profile-col2 {
-  /* Jadi ga kmu kasi warna disananya yah */
-  /* aaa i see */
-  /* Wow rill cuy */
-  /* color: black; */
-  /* biarkan terbengkalai nih warna wkwk*/
   margin-left: 20px;
 }
 
@@ -217,7 +216,6 @@ button.btn-chat:active {
 form input#nama {
   border-radius: 100px;
   border: 1px solid var(--lightgreen-1, #10b981);
-  background: #fff;
 }
 form input#nama:focus {
   box-shadow: 0px 0.5px 5px 0px #10b981;
@@ -231,7 +229,6 @@ form input#nama::placeholder {
 form input#email {
   border-radius: 100px;
   border: 1px solid var(--lightgreen-1, #10b981);
-  background: #fff;
 }
 form input#email:focus {
   box-shadow: 0px 0.5px 5px 0px #10b981;
@@ -245,7 +242,6 @@ form input#email::placeholder {
 form input#whatsapp {
   border-radius: 100px;
   border: 1px solid var(--lightgreen-1, #10b981);
-  background: #fff;
 }
 form input#whatsapp:focus {
   box-shadow: 0px 0.5px 5px 0px #10b981;
@@ -259,7 +255,7 @@ form input#whatsapp::placeholder {
 form textarea#pesan {
   border-radius: 15px;
   border: 1px solid var(--lightgreen-1, #10b981);
-  background: #fff;
+
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
@@ -332,9 +328,6 @@ footer .text-end {
   margin: 0 auto;
 }
 
-/*ohh disini rupanya :skull: wait cara bikin comment git*/
-/* oke + / ok*/
-/* wow thx */
 #toggle:checked ~ label div.toggle-circle {
   transform: translateX(20px);
   -webkit-transform: translateX(20px);
@@ -409,22 +402,3 @@ footer .text-end {
 .star {
   fill: url(#pattern0);
 }
-/* Darkmode fix */
-
-/* darkmode */
-
-/* Mana ccodenya */
-/* Kasi tw lah */
-/* warnanya ku bikin default theme */
-/* ku sulap */
-
-/* wait ini gimana cara milihnya dah. misal aku mau pilih yang produk */
-
-/* panggil class nya terus panggil selector text nya hmmm ok deh kucoba*/
-/* selector text kayak = h1, h2, p, dll */
-/* nais */
-/* finally okky aku kelarin yeahhhhh B)*/
-/* boleh silahkan */
-/* Still ga bisa fix ini  */
-/* true */
-/* oh wait dah */
