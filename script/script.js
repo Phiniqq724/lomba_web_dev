@@ -20,6 +20,7 @@ const jumbotron = document.querySelector(".jumbotron");
 const backdrops = document.querySelector("div.jumbotron div#backdrops");
 const garis = document.getElementById("garis");
 const display1 = document.querySelector(".display-1");
+const hamburger = document.getElementById("hamburger");
 
 checkbox.addEventListener("click", function () {
   checkbox.checked ? html.setAttribute("data-bs-theme", "dark") : html.removeAttribute("data-bs-theme", "dark");
@@ -33,6 +34,7 @@ checkbox.addEventListener("click", function () {
 });
 checkbox.addEventListener("click", function () {
   checkbox.checked ? display1.classList.add("shadow-whites") : display1.classList.remove("shadow-whites");
+  checkbox.checked ? (hamburger.style.backgroundColor = "#e7e7e7") : hamburger.style.backgroundColor("#212529");
 });
 
 // Form Validation
