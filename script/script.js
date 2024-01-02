@@ -20,7 +20,7 @@ const jumbotron = document.querySelector(".jumbotron");
 const backdrops = document.querySelector("div.jumbotron div#backdrops");
 const garis = document.getElementById("garis");
 const display1 = document.querySelector(".display-1");
-const hamburger = document.getElementById("hamburger"); 
+const hamburger = document.getElementById("hamburger");
 // target elements
 
 checkbox.addEventListener("click", function () {

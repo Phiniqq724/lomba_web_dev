@@ -676,30 +676,29 @@
       text-shadow: 0px 1px 3px #FFF;">Pesan Sekarang</h1>
     </div>
     <section class="d-flex justify-content-center">
-      
-      <form style="width: 876px;">
+      <form style="width: 876px;" name="dua-dewi-pesan-sekarang">
         <!-- Name input -->
         <div data-mdb-input-init class="form-outline mb-4">
-          <label class="form-label fs-5" for="nama" style=" font-weight: 600;">Nama</label>
-          <input type="text" id="nama" class="form-control py-2 ps-3" placeholder="Masukkan nama kamu"/>
+          <label class="form-label" for="nama" style=" font-weight: 600;">Nama</label>
+          <input type="text" name="nama" id="nama" class="form-control py-2 ps-3" placeholder="Masukkan nama kamu" required/>
         </div>
 
         <!-- Email input -->
         <div data-mdb-input-init class="form-outline mb-4">
           <label class="form-label" for="email" style=" font-weight: 600;">Email</label>
-          <input type="email" id="email" class="form-control py-2 ps-3" placeholder="Masukkan email kamu"/>
+          <input type="email" name="email" id="email" class="form-control py-2 ps-3" placeholder="Masukkan email kamu" required/>
         </div>
 
-        <!-- Whatsapp input -->
+        <!-- Whatsapp input --> 
         <div data-mdb-input-init class="form-outline mb-4">
           <label class="form-label" for="whatsapp" style=" font-weight: 600;">WhatsApp</label>
-          <input type="text" id="whatsapp" class="form-control py-2 ps-3" placeholder="Masukkan nomor whatsapp kamu"/>
+          <input type="text" name="whatsapp" id="whatsapp" class="form-control py-2 ps-3" placeholder="Masukkan nomor whatsapp kamu" required/>
         </div>
 
         <!-- Message input -->
         <div data-mdb-input-init class="form-outline mb-4">
           <label class="form-label" for="pesan" style=" font-weight: 600;">Pesanan</label>
-          <textarea class="form-control py-2 ps-3" id="pesan" rows="4" placeholder="Masukkan produk yang ingin dipesan"></textarea>
+          <textarea class="form-control py-2 ps-3" name="pesan" id="pesan" rows="4" placeholder="Masukkan produk yang ingin dipesan" required></textarea>
         </div>
 
         <!-- Submit button -->
@@ -709,7 +708,7 @@
               <p class="font-family-raleway fs-5 px-4 mt-2 mb-2" style="color:  var(--lightgreen-1, #10B981);; text-align: center; font-style: normal; font-weight: 600; line-height: normal;background: none;">Lanjut ke chat</p>
             </button>
           </a>
-          <button data-mdb-ripple-init type="button" class="rounded-5 btn-kirim mb-4 mx-2">
+          <button data-mdb-ripple-init type="submit" class="rounded-5 btn-kirim mb-4 mx-2 btn-kirim">
             <p class="font-family-raleway fs-5 px-4 mt-2 mb-2" style="color: #fff; text-align: center; font-style: normal; font-weight: 600; line-height: normal">Kirim</p>
           </button>
         </div>
@@ -898,7 +897,9 @@
     </section>
 <!-- Footer -->
 
-
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
@@ -924,8 +925,9 @@
             items:5
         }
     }
-})
+})  
     </script>
+    
   
   </body>
 
