@@ -422,3 +422,14 @@ footer .text-end {
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
+
+.galery img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.galery:hover img {
+  transform: scale(1.1);
+}
