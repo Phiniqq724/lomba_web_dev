@@ -11,6 +11,11 @@ function scrollFunction() {
   }
 }
 
+const btnKirim = document.querySelector(".btn-kirim");
+btnKirim.addEventListener("click", function () {
+  window.location.href = "http://wa.me/6281330960768";
+});
+
 // logic dark mode
 const checkbox = document.querySelector("#toggle");
 const html = document.querySelector("html");
@@ -30,11 +35,11 @@ checkbox.addEventListener("click", function () {
 });
 
 checkbox.addEventListener("click", function () {
-  checkbox.checked ? backdrops.classList.add("jumbotron-backdrop") : backdrops.classList.remove("jumbotron-backdrop");
-  checkbox.checked ? garis.classList.add("border-white") : garis.classList.add("border-black") || garis.classList.remove("border-white");
+  // checkbox.checked ? backdrops.classList.add("jumbotron-backdrop") : backdrops.classList.remove("jumbotron-backdrop");
+  // checkbox.checked ? garis.classList.add("border-white") : garis.classLis  t.add("border-black") || garis.classList.remove("border-white");
 });
 checkbox.addEventListener("click", function () {
-  checkbox.checked ? display1.classList.add("shadow-whites") : display1.classList.remove("shadow-whites");
+  // checkbox.checked ? display1.classList.add("shadow-whites") : display1.classList.remove("shadow-whites");
   checkbox.checked ? (hamburger.style.backgroundColor = "#e7e7e7") : hamburger.style.backgroundColor("#212529");
 });
 // eventListener to onClick method

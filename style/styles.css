@@ -30,10 +30,6 @@ nav {
   color: black;
 }
 
-.shadow-whites {
-  text-shadow: 0px 1px 3px #fff;
-}
-
 .form-dark {
   background-color: rgba(70, 90, 126, 0.4) !important;
 }
@@ -213,9 +209,9 @@ button.btn-chat:active {
   margin-bottom: 25px;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.card {
+/* .card {
   box-shadow: 0px 1px 5px 0px #fff;
-}
+} */
 
 form input#nama {
   border-radius: 100px;
